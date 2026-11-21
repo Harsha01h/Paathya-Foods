@@ -1,0 +1,223 @@
+.product-detail {
+  max-width: 1240px;
+  margin: 35px auto 65px;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 7%;
+  align-items: center;
+}
+.product-gallery .main-product-image {
+  height: 525px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #f2e2c9;
+}
+.main-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.thumbnails {
+  display: flex;
+  gap: 12px;
+  margin-top: 13px;
+}
+.thumbnails img {
+  width: 82px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 9px;
+  border: 1px solid var(--line);
+}
+.product-description {
+  padding: 20px 0;
+}
+.product-description > .badge {
+  position: static;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.product-description .eyebrow {
+  margin-top: 0;
+}
+.product-description h1 {
+  font-size: 48px;
+  margin: 0 0 10px;
+}
+.rating {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.rating span {
+  color: #b88744;
+  letter-spacing: 0.12em;
+}
+.rating small {
+  color: #777;
+  font-size: 11px;
+}
+.product-description > p:not(.eyebrow):not(.tax-note):not(.delivery-note) {
+  line-height: 1.85;
+  max-width: 490px;
+}
+.detail-price {
+  font: 600 26px var(--sans);
+  color: var(--forest);
+  margin-top: 22px;
+}
+.detail-price small {
+  font: 400 13px var(--sans);
+  color: #777;
+}
+.tax-note {
+  font-size: 10px;
+  margin: 0 0 23px;
+}
+.weight-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-items: center;
+  margin: 18px 0;
+}
+.weight-options > span {
+  width: 100%;
+  font-size: 11px;
+  font-weight: 700;
+}
+.weight-options button {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  padding: 9px 14px;
+  font-size: 11px;
+  color: #555;
+}
+.weight-options button.selected {
+  border-color: var(--forest);
+  color: var(--forest);
+  background: #f2f5ed;
+}
+.buy-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.quantity input {
+  width: 54px;
+  height: 45px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 5px 8px;
+}
+.buy-row .button {
+  flex: 1;
+}
+.wishlist-button {
+  height: 45px;
+  width: 45px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--forest);
+  font-size: 23px;
+}
+.delivery-note {
+  margin-top: 18px;
+  font-size: 11px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.delivery-note img {
+  width: 17px;
+}
+.details-tabs {
+  max-width: 1120px;
+  margin: 0 auto 70px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 0 15px 24px;
+}
+.details-tabs > input {
+  position: absolute;
+  opacity: 0;
+}
+.tab-labels {
+  display: flex;
+  gap: 35px;
+  border-bottom: 1px solid var(--line);
+  overflow: auto;
+}
+.tab-labels label {
+  padding: 17px 0;
+  white-space: nowrap;
+  font-size: 12px;
+  cursor: pointer;
+  color: #777;
+}
+.tab-labels label:hover {
+  color: var(--forest);
+}
+#tab-description:checked ~ .tab-labels label[for="tab-description"],
+#tab-ingredients:checked ~ .tab-labels label[for="tab-ingredients"],
+#tab-nutrition:checked ~ .tab-labels label[for="tab-nutrition"],
+#tab-storage:checked ~ .tab-labels label[for="tab-storage"] {
+  color: var(--forest);
+  border-bottom: 2px solid var(--forest);
+  font-weight: 700;
+}
+.tab-panel {
+  display: none;
+  padding: 25px 0 3px;
+}
+.tab-panel h2 {
+  font-size: 24px;
+}
+.tab-panel p {
+  max-width: 850px;
+  font-size: 13px;
+}
+#tab-description:checked ~ .panel-description,
+#tab-ingredients:checked ~ .panel-ingredients,
+#tab-nutrition:checked ~ .panel-nutrition,
+#tab-storage:checked ~ .panel-storage {
+  display: block;
+}
+.benefits-panel {
+  background: #f5f0e5;
+  text-align: center;
+  padding: 45px 20px;
+  margin-bottom: 30px;
+}
+.benefits-panel h2 {
+  font-size: 30px;
+}
+.benefits-panel > div {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.benefits-panel span {
+  font-size: 12px;
+  color: #45513c;
+}
+.related {
+  padding-top: 45px;
+}
+.related .product-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1000px;
+}

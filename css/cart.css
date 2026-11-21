@@ -1,0 +1,133 @@
+.cart-page {
+  max-width: 1420px;
+  margin: auto;
+  padding-top: 65px;
+}
+.cart-page > .section-heading {
+  text-align: left;
+  margin: 0 0 34px;
+}
+.cart-page > .section-heading h1 {
+  font-size: 46px;
+  margin: 0 0 10px;
+}
+.cart-page > .section-heading > p:last-child {
+  margin: 0;
+}
+.cart-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 0.8fr;
+  gap: 38px;
+  align-items: start;
+}
+.cart-table-head {
+  display: grid;
+  grid-template-columns: 1fr 120px 90px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+  font-weight: 700;
+  color: #797a6d;
+}
+.cart-item {
+  display: grid;
+  grid-template-columns: 105px 1fr 120px 90px;
+  gap: 15px;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+.cart-item > img {
+  width: 105px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: var(--beige);
+}
+.cart-product h2 {
+  font: 500 18px var(--serif);
+  margin: 0 0 5px;
+}
+.cart-product p {
+  font-size: 10px;
+  margin: 0 0 6px;
+}
+.cart-product strong {
+  font-size: 12px;
+}
+.cart-product a {
+  display: block;
+  font-size: 10px;
+  color: #9a6751;
+  text-decoration: underline;
+  margin-top: 7px;
+}
+.cart-qty {
+  font-size: 0;
+}
+.cart-qty input {
+  width: 58px;
+  height: 37px;
+  padding: 5px 9px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+}
+.item-subtotal {
+  font-size: 12px;
+}
+.continue-shopping {
+  display: inline-block;
+  margin-top: 22px;
+}
+.order-summary {
+  border: 1px solid var(--line);
+  background: #fcf9f2;
+  border-radius: 15px;
+  padding: 24px;
+}
+.order-summary h2 {
+  font-size: 25px;
+  margin-bottom: 22px;
+}
+.order-summary > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 13px 0;
+  font-size: 12px;
+}
+.free-shipping {
+  color: var(--olive);
+  font-weight: 700;
+}
+.order-summary > p {
+  font-size: 10px;
+  margin: 5px 0 18px;
+}
+.order-summary .summary-total {
+  border-top: 1px solid var(--line);
+  padding-top: 17px;
+  margin-top: 17px;
+  font-size: 15px;
+}
+.order-summary .button {
+  width: 100%;
+  margin: 8px 0 13px;
+}
+.order-summary > small {
+  display: block;
+  text-align: center;
+  font-size: 9px;
+  color: #888;
+}
+.service-promises {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 55px;
+  padding: 23px;
+  background: #f8f3e8;
+  border-radius: 13px;
+  text-align: center;
+  color: #4c5a43;
+  font-size: 11px;
+}

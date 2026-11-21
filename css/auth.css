@@ -1,0 +1,120 @@
+.auth-layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fffdf8;
+}
+.auth-visual {
+  min-height: 100vh;
+  padding: 42px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background:
+    linear-gradient(0deg, #142413d9, #1424137a),
+    url("../assets/images/backgrounds/nuts-background.jpg") center/cover;
+}
+.auth-visual > a:first-child img {
+  width: 220px;
+  height: 72px;
+  object-fit: contain;
+  object-position: left;
+}
+.auth-visual > div {
+  max-width: 470px;
+}
+.auth-visual .eyebrow {
+  color: #e6d3a7;
+}
+.auth-visual h1 {
+  font-size: clamp(45px, 5vw, 68px);
+  margin: 0 0 16px;
+}
+.auth-visual > div > p:not(.eyebrow) {
+  color: #f4f1e8;
+  max-width: 370px;
+}
+.auth-visual ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+.auth-visual li {
+  margin: 12px 0;
+  font-size: 13px;
+}
+.auth-visual li:before {
+  content: "✓";
+  color: #d9bb80;
+  margin-right: 11px;
+}
+.back-home {
+  font-size: 12px;
+  color: #f3ead8;
+}
+.auth-main {
+  display: grid;
+  place-items: center;
+  padding: 45px 8%;
+}
+.auth-card {
+  width: min(430px, 100%);
+}
+.auth-card h2 {
+  font-size: 42px;
+  margin: 0 0 8px;
+}
+.auth-card > p:not(.eyebrow) {
+  font-size: 12px;
+  margin-bottom: 27px;
+}
+.auth-card .eyebrow {
+  margin-bottom: 10px;
+}
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 23px;
+  font-size: 10px;
+}
+.form-options label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.form-options input {
+  accent-color: var(--forest);
+}
+.form-options a,
+.auth-switch a,
+.terms-copy a {
+  color: var(--forest);
+  font-weight: 700;
+}
+.auth-card > .button {
+  width: 100%;
+}
+.auth-switch {
+  text-align: center;
+  margin: 24px 0 0 !important;
+  font-size: 11px !important;
+}
+.register-card {
+  padding-block: 14px;
+}
+.register-card > p:not(.eyebrow) {
+  margin-bottom: 18px;
+}
+.register-card .form-two {
+  gap: 10px;
+}
+.register-card .form-two input {
+  padding: 11px 9px;
+}
+.terms-copy {
+  text-align: center;
+  font-size: 10px !important;
+  margin: 13px 0 0 !important;
+}
