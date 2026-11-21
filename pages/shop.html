@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Shop | Pathya Foods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/shop.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <span class="shipping"
+        ><img src="../assets/icons/leaf.svg" alt="" />Free Shipping on Orders
+        Above ₹499</span
+      >
+      <div>
+        <a href="cart.html">Track Order</a
+        ><a href="login.html">Login / Sign Up</a>
+      </div>
+    </div>
+    <header class="site-header">
+      <a class="brand" href="../index.html"
+        ><img
+          src="../assets/images/logo.svg"
+          alt="Pathya Foods — Diet Can Heal" /></a
+      ><input class="menu-toggle" type="checkbox" id="menu-toggle" /><label
+        class="menu-button"
+        for="menu-toggle"
+        aria-label="Toggle navigation"
+        ><span></span><span></span><span></span
+      ></label>
+      <nav class="main-nav">
+        <a href="../index.html">Home</a
+        ><a class="current" href="shop.html">Shop</a
+        ><a href="our-story.html">Our Story</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="shop.html" aria-label="Search"
+          ><img src="../assets/icons/search.svg" alt="" /></a
+        ><a href="login.html" aria-label="Wishlist"
+          ><img src="../assets/icons/heart.svg" alt="" /></a
+        ><a class="cart-link" href="cart.html" aria-label="Cart"
+          ><img src="../assets/icons/cart.svg" alt="" /><span>0</span></a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="page-banner shop-banner">
+        <p class="eyebrow">GOODNESS FOR EVERY DAY</p>
+        <h1>Shop All Products</h1>
+        <p>Discover our range of wholesome and nourishing snacks.</p>
+        <div class="breadcrumbs">
+          <a href="../index.html">Home</a><span>/</span>Shop
+        </div>
+      </section>
+      <section class="shop-layout section">
+        <aside class="filters">
+          <h2>Find your favourite</h2>
+          <div class="filter-group">
+            <h3>Categories</h3>
+            <a href="#energy">Energy Bites <span>06</span></a
+            ><a href="#nuts">Nuts &amp; Seeds <span>08</span></a
+            ><a href="#granola">Granola &amp; Cereals <span>05</span></a
+            ><a href="#fruit">Dried Fruits <span>04</span></a>
+          </div>
+          <div class="filter-group">
+            <h3>Price range</h3>
+            <input
+              aria-label="Maximum price"
+              type="range"
+              min="100"
+              max="1000"
+              value="600"
+            />
+            <div class="price-labels"><span>₹100</span><span>₹600</span></div>
+          </div>
+          <div class="filter-group">
+            <h3>Dietary preferences</h3>
+            <label><input type="checkbox" /> High Protein</label
+            ><label><input type="checkbox" /> No Added Sugar</label
+            ><label><input type="checkbox" /> Gluten Free</label
+            ><label><input type="checkbox" /> Vegan</label>
+          </div>
+        </aside>
+        <div class="catalog">
+          <div class="catalog-toolbar">
+            <p>Showing <strong>8</strong> wholesome finds</p>
+            <label
+              >Sort by
+              <select aria-label="Sort products">
+                <option>Featured</option>
+                <option>Price: low to high</option>
+                <option>Price: high to low</option>
+                <option>Newest</option>
+              </select></label
+            >
+          </div>
+          <div class="product-grid shop-grid">
+            <article class="product-card">
+              <a class="product-image" href="product-details.html"
+                ><img
+                  src="../assets/images/products/cocoa-date-bites.jpg"
+                  alt="Cocoa date bites"
+                /><span class="badge">Bestseller</span></a
+              >
+              <div class="product-info">
+                <h3><a href="product-details.html">Cocoa Date Bites</a></h3>
+                <p>Rich cocoa, naturally sweet dates</p>
+                <div><strong>₹249</strong><small>200g</small></div>
+                <a class="small-button" href="cart.html">Add to Cart</a>
+              </div>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="product-details.html"
+                ><img
+                  src="../assets/images/products/nut-seed-mix.jpg"
+                  alt="Nut and seed mix"
+                /><span class="badge badge-olive">Protein rich</span></a
+              >
+              <div class="product-info">
+                <h3><a href="product-details.html">Nut &amp; Seed Mix</a></h3>
+                <p>A crunchy handful for any time</p>
+                <div><strong>₹299</strong><small>250g</small></div>
+                <a class="small-button" href="cart.html">Add to Cart</a>
+              </div>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="product-details.html"
+                ><img
+                  src="../assets/images/products/crunchy-granola.jpg"
+                  alt="Crunchy granola"
+                /><span class="badge">Small batch</span></a
+              >
+              <div class="product-info">
+                <h3><a href="product-details.html">Crunchy Granola</a></h3>
+                <p>Toasty oats with a lovely crunch</p>
+                <div><strong>₹279</strong><small>300g</small></div>
+                <a class="small-button" href="cart.html">Add to Cart</a>
+              </div>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="product-details.html"
+                ><img
+                  src="../assets/images/products/fruit-mix.jpg"
+                  alt="Nature's fruit mix"
+                /><span class="badge badge-olive">No added sugar</span></a
+              >
+              <div class="product-info">
+                <h3><a href="product-details.html">Nature’s Fruit Mix</a></h3>
+                <p>Bright, chewy, naturally fruity</p>
+                <div><strong>₹349</strong><small>250g</small></div>
+                <a class="small-button" href="cart.html">Add to Cart</a>
+              </div>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="product-details.html"
+                ><img
+                  src="../assets/images/products/protein-bites.jpg"
+                  alt="Protein bites"
+                /><span class="badge">New</span></a
+              >
+              <div class="product-info">
+                <h3>
+                  <a href="product-details.html">Everyday Protein Bites</a>
+                </h3>
+                <p>A satisfying little pick-me-up</p>
+                <div><strong>₹329</strong><small>200g</small></div>
+                <a class="small-button" href="cart.html">Add to Cart</a>
+              </div>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="product-details.html"
+                ><img
+                  src="../assets/images/products/wellness-box.jpg"
+                  alt="Pathya wellness snack box"
+                /><span class="badge">Gift favourite</span></a
+              >
+              <div class="product-info">
+                <h3><a href="product-details.html">The Wellness Box</a></h3>
+                <p>A thoughtful mix to share</p>
+                <div><strong>₹899</strong><small>6 packs</small></div>
+                <a class="small-button" href="cart.html">Add to Cart</a>
+              </div>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="product-details.html"
+                ><img
+                  src="../assets/images/category/granola.jpg"
+                  alt="Honey oat granola"
+                /><span class="badge badge-olive">Wholesome</span></a
+              >
+              <div class="product-info">
+                <h3><a href="product-details.html">Honey Oat Clusters</a></h3>
+                <p>Golden clusters for happy mornings</p>
+                <div><strong>₹319</strong><small>300g</small></div>
+                <a class="small-button" href="cart.html">Add to Cart</a>
+              </div>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="product-details.html"
+                ><img
+                  src="../assets/images/category/nuts-seeds.jpg"
+                  alt="Roasted almond and seed snack"
+                /><span class="badge">Bestseller</span></a
+              >
+              <div class="product-info">
+                <h3>
+                  <a href="product-details.html">Roasted Almond Crunch</a>
+                </h3>
+                <p>Lightly roasted, deeply satisfying</p>
+                <div><strong>₹379</strong><small>250g</small></div>
+                <a class="small-button" href="cart.html">Add to Cart</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="../index.html"
+            ><img
+              src="../assets/images/logo.svg"
+              alt="Pathya Foods — Diet Can Heal"
+          /></a>
+          <p>Thoughtful ingredients for everyday well-being.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="shop.html">Shop all</a><a href="our-story.html">Our story</a
+          ><a href="contact.html">Contact us</a>
+        </div>
+        <div>
+          <h3>Customer care</h3>
+          <a href="cart.html">Track an order</a
+          ><a href="contact.html">FAQs &amp; support</a
+          ><a href="login.html">My account</a>
+        </div>
+        <div>
+          <h3>Say hello</h3>
+          <a href="mailto:hello@pathyafoods.example"
+            >hello@pathyafoods.example</a
+          >
+          <p>Mon–Sat, 9 am–6 pm</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Pathya Foods. Made with care.</span>
+        <div>
+          <a href="#privacy">Privacy Policy</a
+          ><a href="#terms">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
