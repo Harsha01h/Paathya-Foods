@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sign In | Pathya Foods</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <main class="auth-layout">
+      <section class="auth-visual">
+        <a href="../index.html"
+          ><img
+            src="../assets/images/logo-light.svg"
+            alt="Pathya Foods — Diet Can Heal"
+        /></a>
+        <div>
+          <p class="eyebrow">WELCOME BACK</p>
+          <h1>Good to see<br />you again.</h1>
+          <p>Your favourite wholesome snacks are just a few moments away.</p>
+          <ul>
+            <li>Thoughtful ingredients</li>
+            <li>Fresh picks, packed with care</li>
+            <li>A little goodness in every bite</li>
+          </ul>
+        </div>
+        <a class="back-home" href="../index.html">← Back to Pathya Foods</a>
+      </section>
+      <section class="auth-main">
+        <form class="auth-card" action="#" method="get">
+          <p class="eyebrow">YOUR PATHYA ACCOUNT</p>
+          <h2>Sign in</h2>
+          <p>Welcome back. Let’s get you to the good stuff.</p>
+          <label for="email">Email address</label
+          ><input
+            id="email"
+            type="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          /><label for="password">Password</label
+          ><input
+            id="password"
+            type="password"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+            required
+          />
+          <div class="form-options">
+            <label><input type="checkbox" /> Remember me</label
+            ><a href="#forgot">Forgot password?</a>
+          </div>
+          <button class="button button-dark" type="submit">Sign In</button>
+          <p class="auth-switch">
+            New to Pathya? <a href="register.html">Create an account</a>
+          </p>
+          <small class="form-note"
+            >This demo form is for visual preview only.</small
+          >
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
